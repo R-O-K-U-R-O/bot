@@ -708,7 +708,7 @@ const startSock = async () => {
 
         const sticker = new Sticker(buffer, {
           pack: "BOT 🤖",
-          author: "pvxcommunity.com",
+          author: "ELG",
           type: StickerTypes.DEFAULT,
           quality: 80,
         });

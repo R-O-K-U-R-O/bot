@@ -38,7 +38,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   const more = String.fromCharCode(8206);
   const readMore = more.repeat(4001);
 
-  let text = `*─「 🔥 <{PVX}> BOT 🔥 」─*
+  let text = `*─「 🔥 <{ELG}> BOT 🔥 」─*
   ${readMore}
 📛 *${prefix}sticker*
 - _Create sticker from media!_
@@ -105,8 +105,6 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 📛 *${prefix}elglink*
   - _Get links for all ELG groups!_
   Alias: *${prefix}link*
-
-
 
 📛 *${prefix}feedback*
   - _Get feedback form!_
