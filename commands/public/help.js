@@ -126,12 +126,6 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 📛 *${prefix}help*
   - _To get list of public commands!_
 
-📛 *${prefix}helpa*
-  - _To get list of admin commands!_
-
-📛 *${prefix}helpo*
-  - _To get list of owner commands!_
-
 send ${prefix}source for sourcecode of BOT
 ✔️ more cool commands coming...`;
 

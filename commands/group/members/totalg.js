@@ -36,7 +36,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   let totalGrpCount = 0;
   for (let group of resultCountGroup) {
     let grpName = group.gname;
-    grpName = grpName.replace("<{PVX}> ", "");
+    grpName = grpName.replace("<{ELG}> ", "");
     totalGrpCount += Number(group.count);
     countGroupMsgTemp += `\n${group.count} - ${grpName}`;
   }

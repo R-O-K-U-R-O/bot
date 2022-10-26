@@ -16,7 +16,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   // console.log(chats);
   // !v.announce &&
   let groups = Object.values(chats)
-    .filter((v) => v.id.endsWith("g.us") && v.subject.startsWith("<{PVX}>"))
+    .filter((v) => v.id.endsWith("g.us") && v.subject.startsWith("<{ELG}>"))
     .map((v) => {
       return { subject: v.subject, id: v.id, participants: v.participants };
     });

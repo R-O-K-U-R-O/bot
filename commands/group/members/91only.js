@@ -9,7 +9,7 @@ module.exports.command = () => {
 const handler = async (sock, msg, from, args, msgInfoObj) => {
   let { prefix } = msgInfoObj;
 
-  let text = `*─「 <{PVX}> BOT 」 ─*
+  let text = `*─「 <{ELG}> BOT 」 ─*
   
 _- To instant ban all the numbers other than 91 code, when added to group!_
 

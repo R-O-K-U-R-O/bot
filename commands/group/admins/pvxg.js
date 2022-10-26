@@ -20,9 +20,9 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   for (let group of resultCountGroup) {
     // let mdpvx = await sock.groupMetadata(group.groupjid);
     let grpName = group.gname;
-    if (!grpName || !grpName.toUpperCase().includes("<{PVX}>")) continue; //not a pvx group
+    if (!grpName || !grpName.toUpperCase().includes("<{ELG}>")) continue; //not a pvx group
     // grpName = grpName.split(" ")[1];
-    grpName = grpName.replace("<{PVX}> ", "");
+    grpName = grpName.replace("<{ELG}> ", "");
     totalGrpCount += Number(group.count);
     countGroupMsgTemp += `\n${group.count} - ${grpName}`;
   }

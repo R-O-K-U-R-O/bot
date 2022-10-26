@@ -9,7 +9,7 @@ module.exports.command = () => {
 const handler = async (sock, msg, from, args, msgInfoObj) => {
   let { prefix } = msgInfoObj;
 
-  let text = `*─「 <{PVX}> RANKS 」 ─*
+  let text = `*─「 <{ELG}> RANKS 」 ─*
 
 Send ${prefix}rank to know your rank (based on total messages in all PVX groups from 24 Nov 2021) and message count.
 

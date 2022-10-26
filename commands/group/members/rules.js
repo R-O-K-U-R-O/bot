@@ -12,7 +12,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   const more = String.fromCharCode(8206);
   const readMore = more.repeat(4001);
 
-  let text = `*─「 <{PVX}> RULES 」 ─*
+  let text = `*─「 <{ELG}> RULES 」 ─*
   ${readMore}
 ✔ Rule 01 -
 _Do not spam in the grp._
