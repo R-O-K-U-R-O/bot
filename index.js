@@ -324,16 +324,16 @@ const startSock = async () => {
       if (bday.length) {
         let bdayComb = bday.join(" & ");
         await sock.sendMessage(pvxcommunity, {
-          text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nToday is ${bdayComb} Birthday 🍰 🎉🎉`,
+          text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nToday is ${bdayComb} Birthday 🍰 🎉🎉`,
         });
       } else {
         console.log("NO BIRTHDAY!");
         await sock.sendMessage(pvxcommunity, {
-          text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nThere is no Birthday today!`,
+          text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nThere is no Birthday today!`,
         });
       }
       try {
-        await sock.groupUpdateSubject(pvxcommunity, "<{PVX}> COMMUNITY ❤️");
+        await sock.groupUpdateSubject(pvxcommunity, "<{ELG}> COMMUNITY ❤️");
       } catch (err) {
         console.log(err);
       }
@@ -518,10 +518,10 @@ const startSock = async () => {
         // blockCommandsInDesc.includes("only91")
         if (
           !num_split.startsWith(91) &&
-          groupSubject.toUpperCase().includes("<{PVX}>")
+          groupSubject.toUpperCase().includes("<{ELG}>")
         ) {
           await sock.sendMessage(from, {
-            text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nOnly +91 numbers are allowed !!!!`,
+            text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nOnly +91 numbers are allowed !!!!`,
           });
           await sock.groupParticipantsUpdate(from, [numJid], "remove");
 
@@ -537,7 +537,7 @@ const startSock = async () => {
         // console.log(blacklistRes);
         if (blacklistRes.includes(num_split)) {
           await sock.sendMessage(from, {
-            text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nNumber is blacklisted !!!!`,
+            text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nNumber is blacklisted !!!!`,
           });
 
           await sock.groupParticipantsUpdate(from, [numJid], "remove");
@@ -601,7 +601,7 @@ const startSock = async () => {
         if (numJid === botNumberJid) {
           console.log("Bot is added to new group!");
           // await sock.sendMessage(myNumber + "@s.whatsapp.net", {
-          //   text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nSEND ${prefix}help FOR BOT COMMANDS`,
+          //   text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nSEND ${prefix}help FOR BOT COMMANDS`,
           // });
         }
         console.log(`[GROUP] ${groupSubject} [JOINED] ${numJid}`);
@@ -670,7 +670,7 @@ const startSock = async () => {
       //Count message
       if (
         isGroup &&
-        groupName.toUpperCase().includes("<{PVX}>") &&
+        groupName.toUpperCase().includes("<{ELG}>") &&
         from !== pvxstickeronly1 &&
         from != pvxstickeronly2 &&
         from != pvxdeals
@@ -688,13 +688,13 @@ const startSock = async () => {
         pvx &&
         isGroup &&
         msg.message.stickerMessage &&
-        groupName.toUpperCase().startsWith("<{PVX}>") &&
+        groupName.toUpperCase().startsWith("<{ELG}>") &&
         from !== pvxstickeronly1 &&
         from != pvxstickeronly2 &&
         from !== mano
       ) {
         // msg.key.fromMe == false &&
-        // "<{PVX}> BOT 🤖"
+        // "<{ELG}> BOT 🤖"
 
         let downloadFilePath = msg.message.stickerMessage;
         const stream = await downloadContentFromMessage(
@@ -1001,7 +1001,7 @@ const startSock = async () => {
       await sock.sendMessage(
         from,
         {
-          text: `Send ${prefix}help for <{PVX}> BOT commands!`,
+          text: `Send ${prefix}help for <{ELG}> BOT commands!`,
         },
         { quoted: m.messages[0] }
       );
