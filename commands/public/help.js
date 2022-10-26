@@ -66,7 +66,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   - _Know ranks list of PVX groups!_
 
 📛 *${prefix}totalg*
-  - _Know your message stats in all PVX groups!_
+  - _Know your message stats in all groups!_
   
 📛 *${prefix}ytv url*
   - _Youtube videos downloader!_
@@ -76,6 +76,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 
 📛 *${prefix}steal*
   - _Change sticker name to PVX BOT!_
+  Alias: *${prefix}st*
 
 📛 *${prefix}song name*
   - _Get songs in good quality!_
