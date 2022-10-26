@@ -102,18 +102,17 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 📛 *${prefix}technews*
   - _Get latest Tech news from inshorts !_ 
 
-📛 *${prefix}pvxlink*
-  - _Get links for all PVX groups!_
+📛 *${prefix}elglink*
+  - _Get links for all ELG groups!_
   Alias: *${prefix}link*
 
-📛 *${prefix}donation*
-  - _Get donation details and help PVX community!_
+
 
 📛 *${prefix}feedback*
   - _Get feedback form!_
 
 📛 *${prefix}rules*
-  - _Get PVX groups rules!_
+  - _Get ELG groups rules!_
   Alias: *${prefix}r*
 
 📛 *${prefix}source*

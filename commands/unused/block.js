@@ -9,7 +9,7 @@ module.exports.command = () => {
 const handler = async (sock, msg, from, args, msgInfoObj) => {
   let { prefix } = msgInfoObj;
 
-  let text = `*─「 <{PVX}> BOT 」 ─*
+  let text = `*─「 <{ELG}> BOT 」 ─*
 
 _- Give command name (with comma seperated and without spaces) to be blocked in *first line of group description* , like:_
 score,add,quote

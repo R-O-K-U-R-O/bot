@@ -8,7 +8,7 @@ module.exports.command = () => {
 
 const handler = async (sock, msg, from, args, msgInfoObj) => {
   let { prefix } = msgInfoObj;
-  let text = `*─「 <{PVX}> BOT 」 ─*\n\nYES! BOT IS ALIVE !!!`;
+  let text = `*─「 <{ELG}> BOT 」 ─*\n\nYES! BOT IS ALIVE !!!`;
 
   sock.sendMessage(from, { text }, { quoted: msg });
 };

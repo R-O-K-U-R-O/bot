@@ -162,20 +162,20 @@ const { getDisableCommandData } = require("./db/disableCommandDB");
 let countSent = 1;
 let commandSent = 1;
 
-let pvxcommunity = "919557666582-1467533860@g.us";
-let pvxprogrammer = "919557666582-1584193120@g.us";
-let pvxadmin = "919557666582-1498394056@g.us";
-let pvxstudy = "919557666582-1617595892@g.us";
-let pvxmano = "19016677357-1630334490@g.us";
-let pvxtech = "919557666582-1551290369@g.us";
-let pvxsport = "919557666582-1559476348@g.us";
-let pvxmovies = "919557666582-1506690003@g.us";
-let pvxsticker1 = "919557666582-1580308963@g.us";
-let pvxsticker2 = "919557666582-1621700558@g.us";
-let pvxstickeronly1 = "919557666582-1628610549@g.us";
-let pvxstickeronly2 = "919557666582-1586018947@g.us";
+let ELGcommunity = "919557666582-1467533860@g.us";
+let ELGprogrammer = "919557666582-1584193120@g.us";
+let ELGadmin = "919557666582-1498394056@g.us";
+let ELGstudy = "919557666582-1617595892@g.us";
+let ELGmano = "19016677357-1630334490@g.us";
+let ELGtech = "919557666582-1551290369@g.us";
+let ELGsport = "919557666582-1559476348@g.us";
+let ELGmovies = "919557666582-1506690003@g.us";
+let ELGsticker1 = "919557666582-1580308963@g.us";
+let ELGsticker2 = "919557666582-1621700558@g.us";
+let ELGstickeronly1 = "919557666582-1628610549@g.us";
+let ELGstickeronly2 = "919557666582-1586018947@g.us";
 let mano = "19016677357-1630334490@g.us";
-let pvxdeals = "919557666582-1582555632@g.us";
+let ELGdeals = "919557666582-1582555632@g.us";
 
 const addCommands = async () => {
   console.log("Commands Added!");
@@ -324,16 +324,16 @@ const startSock = async () => {
       if (bday.length) {
         let bdayComb = bday.join(" & ");
         await sock.sendMessage(pvxcommunity, {
-          text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nToday is ${bdayComb} Birthday 🍰 🎉🎉`,
+          text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nToday is ${bdayComb} Birthday 🍰 🎉🎉`,
         });
       } else {
         console.log("NO BIRTHDAY!");
         await sock.sendMessage(pvxcommunity, {
-          text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nThere is no Birthday today!`,
+          text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nThere is no Birthday today!`,
         });
       }
       try {
-        await sock.groupUpdateSubject(pvxcommunity, "<{PVX}> COMMUNITY ❤️");
+        await sock.groupUpdateSubject(pvxcommunity, "<{ELG}> COMMUNITY ❤️");
       } catch (err) {
         console.log(err);
       }
@@ -518,10 +518,10 @@ const startSock = async () => {
         // blockCommandsInDesc.includes("only91")
         if (
           !num_split.startsWith(91) &&
-          groupSubject.toUpperCase().includes("<{PVX}>")
+          groupSubject.toUpperCase().includes("<{ELG}>")
         ) {
           await sock.sendMessage(from, {
-            text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nOnly +91 numbers are allowed !!!!`,
+            text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nOnly +91 numbers are allowed !!!!`,
           });
           await sock.groupParticipantsUpdate(from, [numJid], "remove");
 
@@ -537,7 +537,7 @@ const startSock = async () => {
         // console.log(blacklistRes);
         if (blacklistRes.includes(num_split)) {
           await sock.sendMessage(from, {
-            text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nNumber is blacklisted !!!!`,
+            text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nNumber is blacklisted !!!!`,
           });
 
           await sock.groupParticipantsUpdate(from, [numJid], "remove");
@@ -550,7 +550,7 @@ const startSock = async () => {
         //for study group
         if (from === pvxstudy) {
           await sock.sendMessage(from, {
-            text: `Welcome @${num_split} to PVX Study group.\nhttps://pvxcommunity.com/\n\nKindly fill the Biodata form (mandatory for all)\n\n👇🏻👇🏻👇🏻👇🏻👇🏻\nhttps://forms.gle/uuvUwV5fTk8JAjoTA`,
+            text: `Welcome @${num_split} to PVX Study group.\nhttps://.com/\n\nKindly fill the Biodata form (mandatory for all)\n\n👇🏻👇🏻👇🏻👇🏻👇🏻\nhttps://forms.gle/uuvUwV5fTk8JAjoTA`,
             mentions: [numJid],
           });
         }
@@ -558,7 +558,7 @@ const startSock = async () => {
         //for movies group
         if (from === pvxmovies) {
           await sock.sendMessage(from, {
-            text: `Welcome @${num_split} to PVX Movies.\nhttps://pvxcommunity.com/\n\nWhat are your currently watching..?`,
+            text: `Welcome @${num_split} to PVX Movies.\nhttps://p/\n\nWhat are your currently watching..?`,
             mentions: [numJid],
           });
         }
@@ -566,7 +566,7 @@ const startSock = async () => {
         //for community group
         if (from === pvxcommunity) {
           await sock.sendMessage(from, {
-            text: `Welcome @${num_split} to PVX COMMUNITY.\nhttps://pvxcommunity.com/\n\nSend ${prefix}rules to know all PVX rules.\nIf you're new to PVX, please share how did you find us.`,
+            text: `Welcome @${num_split} to PVX COMMUNITY.\nhttps://p\n\nSend ${prefix}rules to know all PVX rules.\nIf you're new to PVX, please share how did you find us.`,
             mentions: [numJid],
           });
         }
@@ -589,7 +589,7 @@ const startSock = async () => {
 
         if (from === pvxsticker1 || from === pvxsticker2) {
           await sock.sendMessage(from, {
-            text: `Welcome @${num_split} to PVX Stickers\nhttps://pvxcommunity.com/\n\n1) Don't make any type of sticker that targets any caste, community, religion, sex, creed, etc.\n2) The use of any kind of 18+ media (be it nudes or semi nudes) is not allowed.\n3) Every sticker you make here gets PVX branding in it along with website, so You'll get instant ban on disobeying any rule`,
+            text: `Welcome @${num_split} to ELG Stickers\n) Don't make any type of sticker that targets any caste, community, religion, sex, creed, etc.\n2) The use of any kind of 18+ media (be it nudes or semi nudes) is not allowed.\n3) Every sticker you make here gets PVX branding in it along with website, so You'll get instant ban on disobeying any rule`,
             mentions: [numJid],
           });
         }
@@ -601,7 +601,7 @@ const startSock = async () => {
         if (numJid === botNumberJid) {
           console.log("Bot is added to new group!");
           // await sock.sendMessage(myNumber + "@s.whatsapp.net", {
-          //   text: `*─「 🔥 <{PVX}> BOT 🔥 」─* \n\nSEND ${prefix}help FOR BOT COMMANDS`,
+          //   text: `*─「 🔥 <{ELG}> BOT 🔥 」─* \n\nSEND ${prefix}help FOR BOT COMMANDS`,
           // });
         }
         console.log(`[GROUP] ${groupSubject} [JOINED] ${numJid}`);
@@ -670,7 +670,7 @@ const startSock = async () => {
       //Count message
       if (
         isGroup &&
-        groupName.toUpperCase().includes("<{PVX}>") &&
+        groupName.toUpperCase().includes("<{ELG}>") &&
         from !== pvxstickeronly1 &&
         from != pvxstickeronly2 &&
         from != pvxdeals
@@ -688,7 +688,7 @@ const startSock = async () => {
         pvx &&
         isGroup &&
         msg.message.stickerMessage &&
-        groupName.toUpperCase().startsWith("<{PVX}>") &&
+        groupName.toUpperCase().startsWith("<{ELG}>") &&
         from !== pvxstickeronly1 &&
         from != pvxstickeronly2 &&
         from !== mano
@@ -708,7 +708,7 @@ const startSock = async () => {
 
         const sticker = new Sticker(buffer, {
           pack: "BOT 🤖",
-          author: "pvxcommunity.com",
+          author: "ELG",
           type: StickerTypes.DEFAULT,
           quality: 80,
         });
@@ -1001,7 +1001,7 @@ const startSock = async () => {
       await sock.sendMessage(
         from,
         {
-          text: `Send ${prefix}help for <{PVX}> BOT commands!`,
+          text: `Send ${prefix}help for <{ELG}> BOT commands!`,
         },
         { quoted: m.messages[0] }
       );
