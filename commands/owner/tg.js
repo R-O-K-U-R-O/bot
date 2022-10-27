@@ -71,7 +71,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
 
       const sticker = new Sticker(filepath, {
         pack: "BOT 🤖",
-        author: "pvxcommunity.com",
+        author: "ELG",
         type: StickerTypes.DEFAULT,
         quality: 75,
       });

@@ -36,7 +36,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
       console.log(img);
 
       let packName = "BOT 🤖";
-      let authorName = "pvxcommunity.com";
+      let authorName = "ELG";
       stickerMake = new Sticker(img, {
         pack: packName,
         author: authorName,

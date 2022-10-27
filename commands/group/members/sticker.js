@@ -19,7 +19,7 @@ const getRandom = (ext) => {
 const handler = async (sock, msg, from, args, msgInfoObj) => {
   let { type, isMedia, isTaggedImage, isTaggedVideo, reply } = msgInfoObj;
   let packName = "BOT 🤖";
-  let authorName = "pvxcommunity.com";
+  let authorName = "ELG";
   const stickerFileName = getRandom(".webp");
   let stickerMake;
   //for image

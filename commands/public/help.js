@@ -59,12 +59,6 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   - _Search sticker from any name!_
   Alias: *${prefix}ss*
 
-📛 *${prefix}rank*
-  - _Know your message count & rank in all PVX groups!_
-  
-📛 *${prefix}ranks*
-  - _Know ranks list of PVX groups!_
-
 📛 *${prefix}totalg*
   - _Know your message stats in all groups!_
   
@@ -75,7 +69,7 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   - _Youtube audio downloader!_
 
 📛 *${prefix}steal*
-  - _Change sticker name to PVX BOT!_
+  - _Change sticker name to ELG BOT!_
   Alias: *${prefix}st*
 
 📛 *${prefix}song name*
@@ -107,18 +101,9 @@ const handler = async (sock, msg, from, args, msgInfoObj) => {
   - _Get links for all ELG groups!_
   Alias: *${prefix}link*
 
-📛 *${prefix}feedback*
-  - _Get feedback form!_
-
 📛 *${prefix}rules*
   - _Get ELG groups rules!_
   Alias: *${prefix}r*
-
-📛 *${prefix}source*
-  - _Get bot source code!_
-
-📛 *${prefix}dev*
-  - _Get dev contact to report bug or to add new feature!_
 
 📛 *${prefix}91only*
   - _To instant ban all numbers other than 91 when joined in group!_
